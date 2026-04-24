@@ -2,9 +2,9 @@ import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 
 const images = [
-  "/minimal-architecture-portfolio-with-clean-lines.jpg",
-  "/fashion-photography-editorial-black-and-white.jpg",
-  "/modern-ui-design-portfolio-mockup.jpg",
+  "https://cdn.poehali.dev/projects/19acf493-00c8-424d-a38a-c2da20f39f01/files/6d55d2c8-0352-49d9-b2e2-a197331419a2.jpg",
+  "https://cdn.poehali.dev/projects/19acf493-00c8-424d-a38a-c2da20f39f01/files/6277aa23-9115-4665-8e60-5c859930155d.jpg",
+  "https://cdn.poehali.dev/projects/19acf493-00c8-424d-a38a-c2da20f39f01/files/518a9a4d-994e-475b-9fbf-6ace91d06f76.jpg",
 ]
 
 export function HeroSection() {
@@ -72,14 +72,17 @@ export function HeroSection() {
       </div>
 
       <motion.div
-        className="absolute inset-0 flex items-center justify-center pointer-events-none z-10"
+        className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-10 gap-4"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
       >
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-foreground mix-blend-difference">
-          Ваши работы, <em className="italic">в фокусе</em>.
+          Наш класс, <em className="italic">наша история</em>.
         </h1>
+        <p className="text-lg md:text-xl text-foreground/70 mix-blend-difference text-center max-w-md">
+          Каждый из нас — отдельная история. Вместе — целая жизнь.
+        </p>
       </motion.div>
 
       <motion.div

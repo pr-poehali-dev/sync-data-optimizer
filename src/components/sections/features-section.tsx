@@ -86,11 +86,11 @@ export function FeaturesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Возможности
+          О нас
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Typography Card */}
+          {/* Card 1 */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -101,16 +101,22 @@ export function FeaturesSection() {
             transition={{ duration: 0.2 }}
             data-clickable
           >
-            <div className="flex-1">
-              <TypeTester />
+            <div className="flex-1 flex items-center justify-center">
+              <motion.span
+                className="font-serif text-7xl md:text-8xl text-foreground"
+                animate={{ scale: [1, 1.2, 1] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              >
+                🎓
+              </motion.span>
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Типографика</h3>
-              <p className="text-muted-foreground text-sm mt-1">Красивые шрифты, которые идеально масштабируются.</p>
+              <h3 className="font-serif text-xl text-foreground">Выпускники</h3>
+              <p className="text-muted-foreground text-sm mt-1">Каждый из нас прошёл свой путь от первого звонка до последнего.</p>
             </div>
           </motion.div>
 
-          {/* Layouts Card */}
+          {/* Card 2 */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -125,12 +131,12 @@ export function FeaturesSection() {
               <LayoutAnimation />
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Макеты</h3>
-              <p className="text-muted-foreground text-sm mt-1">Гибкие сетки, которые адаптируются под контент.</p>
+              <h3 className="font-serif text-xl text-foreground">Истории</h3>
+              <p className="text-muted-foreground text-sm mt-1">Портрет каждого ученика — мечты, увлечения и планы на будущее.</p>
             </div>
           </motion.div>
 
-          {/* Speed Card */}
+          {/* Card 3 */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -141,12 +147,22 @@ export function FeaturesSection() {
             whileTap={{ scale: 0.96 }}
             data-clickable
           >
-            <div className="flex-1">
-              <SpeedIndicator />
+            <div className="flex-1 flex flex-col items-center justify-center gap-4">
+              <span className="text-4xl font-sans font-medium text-foreground">2025</span>
+              <span className="text-sm text-muted-foreground">Год выпуска</span>
+              <div className="w-full max-w-[120px] h-1.5 bg-foreground/10 rounded-full overflow-hidden">
+                <motion.div
+                  className="h-full bg-primary rounded-full"
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "100%" }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.2, ease: "easeOut" }}
+                />
+              </div>
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Скорость</h3>
-              <p className="text-muted-foreground text-sm mt-1">Молниеносная загрузка страниц для ваших гостей.</p>
+              <h3 className="font-serif text-xl text-foreground">Воспоминания</h3>
+              <p className="text-muted-foreground text-sm mt-1">Годы, которые останутся с нами навсегда.</p>
             </div>
           </motion.div>
         </div>

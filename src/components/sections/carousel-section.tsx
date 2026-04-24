@@ -1,12 +1,12 @@
 import { motion } from "framer-motion"
 
 const portfolioItems = [
-  "/portfolio-website-design-preview-modern.jpg",
-  "/photography-portfolio-website-clean.jpg",
-  "/architecture-firm-website-minimal.jpg",
-  "/design-agency-portfolio-dark-theme.jpg",
-  "/artist-portfolio-website-creative.jpg",
-  "/writer-portfolio-website-elegant.jpg",
+  "https://cdn.poehali.dev/projects/19acf493-00c8-424d-a38a-c2da20f39f01/files/6d55d2c8-0352-49d9-b2e2-a197331419a2.jpg",
+  "https://cdn.poehali.dev/projects/19acf493-00c8-424d-a38a-c2da20f39f01/files/518a9a4d-994e-475b-9fbf-6ace91d06f76.jpg",
+  "https://cdn.poehali.dev/projects/19acf493-00c8-424d-a38a-c2da20f39f01/files/6277aa23-9115-4665-8e60-5c859930155d.jpg",
+  "https://cdn.poehali.dev/projects/19acf493-00c8-424d-a38a-c2da20f39f01/files/6d55d2c8-0352-49d9-b2e2-a197331419a2.jpg",
+  "https://cdn.poehali.dev/projects/19acf493-00c8-424d-a38a-c2da20f39f01/files/518a9a4d-994e-475b-9fbf-6ace91d06f76.jpg",
+  "https://cdn.poehali.dev/projects/19acf493-00c8-424d-a38a-c2da20f39f01/files/6277aa23-9115-4665-8e60-5c859930155d.jpg",
 ]
 
 export function CarouselSection() {
@@ -22,7 +22,7 @@ export function CarouselSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Создано авторами для авторов.
+          Одноклассники. Друзья. Навсегда.
         </motion.h2>
       </div>
 
